@@ -7,50 +7,55 @@
     "███████║██║  ██║███████╗███████╗███████╗",
     "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
   ],
-  "title": "WebShell",
+  "title": "SeerShell",
   "username": "visitor",
-  "hostname": "webshell",
-  "password": "050823",
-  "repoLink": "https://github.com/nasan016/webshell",
+  "hostname": "SeerIntelligence",
+  "password": "badpassword",
+  "repoLink": "https://github.com/SeerIntelligence/webshell-seer",
   "social": {
-    "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "email": "contact@SeerIntelligence.com",
+    "github": "SeerIntelligence",
+    "linkedin": "SeerIntelligence"
   },
-  "aboutGreeting": "Hi stranger. Welcome to WebShell.",
+  "aboutGreeting": "Hi stranger. Welcome to SeerIntelligence.",
   "projects": [
     [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
+      "Services",
+      "Seer's Services & Products",
+      "https://docs.SeerIntelligence.com"
     ],
     [
-      "WebShell",
-      "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
+      "OVR",
+      "Seer's Open Vulnerability Repository",
+      "https://ovr.SeerIntelligence.com"
+    ],
+    [
+      "SOSCS",
+      "Seer's Open Standard (of) Cyber Security",
+      "https://soscs.SeerIntelligence.com"
     ]
   ],
   "colors": {
-    "background": "#0C0623",
-    "foreground": "#F8DDE5",
-    "banner": "#FF9951",
+    "background": "#000000",
+    "foreground": "#00FF66",
+    "banner": "#00FF66",
     "border": {
       "visible": true,
-      "color": "#FFADE2"
+      "color": "#00FF66"
     },
     "prompt": {
-      "default": "#A5A7A7",
-      "user": "#FE6BC9",
-      "host": "#70FDFF",
-      "input": "#FF7685"
+      "default": "#FFFFFF",
+      "user": "#FFFFFF",
+      "host": "#FFFFFF",
+      "input": "#FFFFFF"
     },
     "link": {
-      "text": "#B6AAEE",
+      "text": "#FFFFFF",
       "highlightColor": "#FFADE2",
       "highlightText": "#0C0623"
     },
     "commands": {
-      "textColor": "#FD9BDB"
+      "textColor": "#66ff66"
     }
   }
 }

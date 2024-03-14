@@ -102,15 +102,15 @@ function enterKey() {
   }
 
   /*
-  if input is empty or a collection of spaces, 
+  if input is empty or a collection of spaces,
   just insert a prompt before #write-lines
   */
   if (userInput.trim().length !== 0) {
       commandHandler(userInput.toLowerCase().trim());
     }
-  
+
   USERINPUT.value = resetInput;
-  userInput = resetInput; 
+  userInput = resetInput;
 }
 
 function tabKey() {
@@ -126,12 +126,12 @@ function tabKey() {
 
 function arrowKeys(e : string) {
   switch(e){
-    case "ArrowDown":      
+    case "ArrowDown":
       if (historyIdx !== HISTORY.length) {
           historyIdx += 1;
           USERINPUT.value = HISTORY[historyIdx];
-          if (historyIdx === HISTORY.length) USERINPUT.value = tempInput;  
-      }      
+          if (historyIdx === HISTORY.length) USERINPUT.value = tempInput;
+      }
       break;
     case "ArrowUp":
       if (historyIdx === HISTORY.length) tempInput = USERINPUT.value;
@@ -173,7 +173,7 @@ function commandHandler(input : string) {
           } else {
             writeLines(["<br>", "Directory not found.", "type <span class='command'>'ls'</span> for a list of directories.", "<br>"]);
           }
-        } 
+        }
       } else {
         writeLines(["Permission not granted.", "<br>"]);
     }
@@ -191,7 +191,7 @@ function commandHandler(input : string) {
       break;
     case 'banner':
       if(bareMode) {
-        writeLines(["WebShell v1.0.0", "<br>"])
+        writeLines(["SeerShell v1.0.0", "<br>"])
         break;
       }
       writeLines(BANNER);
@@ -203,7 +203,7 @@ function commandHandler(input : string) {
       }
       writeLines(HELP);
       break;
-    case 'whoami':      
+    case 'whoami':
       if(bareMode) {
         writeLines([`${command.username}`, "<br>"])
         break;
@@ -287,7 +287,7 @@ function commandHandler(input : string) {
 
       writeLines(DEFAULT);
       break;
-  }  
+  }
 }
 
 function writeLines(message : string[]) {
@@ -340,7 +340,7 @@ function passwordHandler() {
   }
 }
 
-function easterEggStyles() {   
+function easterEggStyles() {
   const bars = document.getElementById("bars");
   const body = document.body;
   const main = document.getElementById("main");
@@ -384,12 +384,12 @@ const initEventListeners = () => {
 
   if(PRE_USER) {
     PRE_USER.innerText = command.username;
-  } 
+  }
 
     window.addEventListener('load', () => {
     writeLines(BANNER);
   });
-  
+
   USERINPUT.addEventListener('keypress', userInputHandler);
   USERINPUT.addEventListener('keydown', userInputHandler);
   PASSWORD_INPUT.addEventListener('keypress', userInputHandler);
