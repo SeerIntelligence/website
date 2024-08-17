@@ -1,4 +1,7 @@
+// @ts-ignore
 import command from '../../config.json' assert {type: 'json'};
+
+
 
 const createBanner = () : string[] => {
   const banner : string[] = [];
@@ -19,11 +22,13 @@ const createBanner = () : string[] => {
   });
   banner.push("<br>");
   banner.push("Welcome to SeerShell v1.0.0");
+  banner.push("We are a private security company, if you need to learn about our services and software:");
   banner.push("Type <span class='command'>'projects'</span> for a list of all projects & services.");
   banner.push("Type <span class='command'>'help'</span> for a list of all available commands.");
   banner.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
   banner.push("<br>");
   return banner;
+
 }
 
 export const BANNER = createBanner();

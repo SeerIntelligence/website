@@ -269,7 +269,7 @@ function commandHandler(input : string) {
       break;
     case 'ls':
       if(bareMode) {
-        writeLines(["", "<br>"])
+        writeLines(["As empty as my heart, there's nothing left.", "<br>"])
         break;
       }
 
