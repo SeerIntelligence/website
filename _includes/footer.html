@@ -1,0 +1,12 @@
+<footer class="container footer-centered">
+  <div>{{ site.footer }}</div>
+  <div class="download-links footer-download-links">
+    <p>download this page:</p>
+    <ul>
+      <li><a href="{{ page.url | prepend: site.baseurl }}" download>html (browser)</a></li>
+      <li><code>wget {{ site.url }}{{ page.url }}</code></li>
+      <li><code>curl -O {{ site.url }}{{ page.url }}</code></li>
+    </ul>
+  </div>
+</footer>
+
