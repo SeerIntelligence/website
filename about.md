@@ -13,3 +13,6 @@ we focus on two main projects: the directory, a curated collection of everything
 operating on a modest hobby budget means progress is slow but steady. everything we uncover will eventually be shared publicly—no paywalls, no gatekeeping. it’s about transparency and collective awareness.
 
 we do this purely for the love of the game, driven by curiosity and a commitment to open knowledge, not profit or prestige.
+
+SeerIntelligence is built by independent immigrants. we operate fully within legal bounds and have zero affiliation with any nation-state, apt, or extremist group.
+Before you come knocking, we are *specifically* not connected to the IRGC.
