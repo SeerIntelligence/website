@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-06-16T22:06:48+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">SeerIntelligence</title><subtitle>Security journal for the people in touch,  here we experience security as it happens.</subtitle><entry><title type="html">authd and the dangers of maintainer-deprived authentication software</title><link href="http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html" rel="alternate" type="text/html" title="authd and the dangers of maintainer-deprived authentication software" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-16T00:00:00+00:00</updated><id>http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software</id><content type="html" xml:base="http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html"><![CDATA[<blockquote>
+<!DOCTYPE html>
+<!-- in your layout (e.g., _layouts/default.html) -->
+
+<html lang="en">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self'; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; media-src 'self'; object-src 'self'; child-src 'self'; form-action 'none'; base-uri 'self'" />
+<meta http-equiv="X-XSS-Protection"  content="1;mode=block" always>
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>authd and the dangers of maintainer-deprived authentication software</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="authd and the dangers of maintainer-deprived authentication software" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This post was initially going to be called “authd, and WHY ARE WE LETTING CANONICAL SHIP AUTH MODULES? LOOK AT WHAT THEY DID TO GNOME”, but that was too long and too yell-y." />
+<meta property="og:description" content="This post was initially going to be called “authd, and WHY ARE WE LETTING CANONICAL SHIP AUTH MODULES? LOOK AT WHAT THEY DID TO GNOME”, but that was too long and too yell-y." />
+<link rel="canonical" href="http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html" />
+<meta property="og:site_name" content="SeerIntelligence" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="authd and the dangers of maintainer-deprived authentication software" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-16T00:00:00+00:00","datePublished":"2025-06-16T00:00:00+00:00","description":"This post was initially going to be called “authd, and WHY ARE WE LETTING CANONICAL SHIP AUTH MODULES? LOOK AT WHAT THEY DID TO GNOME”, but that was too long and too yell-y.","headline":"authd and the dangers of maintainer-deprived authentication software","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html"},"url":"http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" type="text/css" href="/assets/main-dark.css"></head>
+<body>
+    <div class="container"><header>
+  <div class="menu">
+
+    <ul><li><a href="/">/</a></li><li><a href="/about/">/about</a></li><li><a href="/contact">/contact</a></li><li><a href="/support/">/support</a></li></ul>
+  </div>
+</header>
+<main>
+      <blockquote>
   <p>This post was initially going to be called “authd, and WHY ARE WE LETTING CANONICAL SHIP AUTH MODULES? LOOK AT WHAT THEY DID TO GNOME”, but that was too long and too yell-y.</p>
 </blockquote>
 
@@ -65,14 +100,21 @@ and you definitely don’t ship broken group logic.</p>
   <li><a href="https://github.com/ubuntu/authd/security/advisories/GHSA-g8qw-mgjx-rwjr">Security report</a></li>
   <li><a href="https://github.com/ubuntu/authd/blame/619ce8e55953b970f1765ddaad565081538151ab/internal/services/user/user.go#L198">Git blame</a></li>
   <li><a href="https://wiki.debian.org/UserPrivateGroups#UPGs">Debian’s default behavior</a></li>
-</ul>]]></content><author><name></name></author><category term="security" /><summary type="html"><![CDATA[This post was initially going to be called “authd, and WHY ARE WE LETTING CANONICAL SHIP AUTH MODULES? LOOK AT WHAT THEY DID TO GNOME”, but that was too long and too yell-y.]]></summary></entry><entry><title type="html">Sunsetting LORE and new beginnings</title><link href="http://0.0.0.0:4000/2025/06/11/Sunsetting-LORE-and-new-beginnings.html" rel="alternate" type="text/html" title="Sunsetting LORE and new beginnings" /><published>2025-06-11T00:00:00+00:00</published><updated>2025-06-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/2025/06/11/Sunsetting-LORE-and-new-beginnings</id><content type="html" xml:base="http://0.0.0.0:4000/2025/06/11/Sunsetting-LORE-and-new-beginnings.html"><![CDATA[<p>after much thought, we’re sunsetting <strong>LORE</strong>. it served us well but no longer fits our evolving vision.</p>
+</ul>
 
-<p>with that, we are also shutting down all SeerIntelligence security services, as we are trying to fit on a more open source and intelligence based agenda.</p>
 
-<p>seerintelligence is shifting focus: deeper security journaling, sharper insights, and a relentless push toward actionable intelligence.</p>
+    </main><footer class="container footer-centered">
+  <div></div>
+  <div class="download-links footer-download-links">
+    <p>download this page:</p>
+    <ul>
+      <li><a href="/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html" download>html (browser)</a></li>
+      <li><code>wget http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html</code></li>
+      <li><code>curl -O http://0.0.0.0:4000/security/2025/06/16/authd-and-the-dangers-of-maintainer-deprived-authentication-software.html</code></li>
+    </ul>
+  </div>
+</footer>
 
-<p>expect cleaner tools, better data hygiene, and an ecosystem built for the long haul — no fluff, just raw, meaningful signals.</p>
-
-<p>stay tuned for new releases. this isn’t just an end, it’s a strategic rebirth.</p>
-
-<p>questions? feedback? hit us up.</p>]]></content><author><name></name></author><category term="announcement" /><category term="change" /><category term="seerintelligence" /><summary type="html"><![CDATA[after much thought, we’re sunsetting LORE. it served us well but no longer fits our evolving vision.]]></summary></entry></feed>
+</div>
+  </body>
+</html>
